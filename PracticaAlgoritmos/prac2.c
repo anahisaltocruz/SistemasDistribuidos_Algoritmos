@@ -6,31 +6,26 @@
 #include <stdio.h>
 #include <string.h>
 
-void invertirString(char* str) {
+//void invertirString(char* str) {
+char* invertirCadena(char* str) {
     int longitud = strlen(str);
+    //printf("Longitud: %d\n",longitud);
     int i, j;
-    char temp;
-
+    char aux;
     // Intercambiar caracteres desde ambos extremos hacia el centro
     for (i = 0, j = longitud - 1; i < j; i++, j--) {
-        temp = str[i];
-        str[i] = str[j];
-        str[j] = temp;
+        aux = str[i];  //Se guarda el caracter de la primera posición (avanzando hacia adelante)
+        str[i] = str[j]; //A la primera posición (avanzando hacia adelante) se le asigna la última
+        str[j] = aux;  //A la última posición (avanzando hacia atrás) se le asigna el primer valor de la cadena
+        //El ciclo for se detiene cuando se ha llegado a la mitad de la cadena
     }
+    return str;
 }
 
 int main() {
-    char str[100];
-
+    char oracion[100];
     printf("Ingrese una cadena: ");
-    fgets(str, sizeof(str), stdin);
-
-    // Eliminar el salto de línea del final de la cadena
-    str[strcspn(str, "\n")] = '\0';
-
-    invertirString(str);
-
-    printf("Cadena invertida: %s\n", str);
-
+    fgets(oracion, sizeof(oracion), stdin);
+    printf("Cadena invertida: %s\n", invertirCadena(oracion));
     return 0;
 }

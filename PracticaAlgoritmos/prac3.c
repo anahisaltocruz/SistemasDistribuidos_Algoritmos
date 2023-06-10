@@ -33,8 +33,6 @@ int main(){
     printf("  =========================\n");
     printf("  %c Caracter %c Frecuencia %c\n",186,186,186);
     printf("  =========================\n");
-    //int j = 1;
-    int k;
     Nodo *inicio = lista;
     while(inicio != NULL){
         printf("  %c    %c     %c     %2d     %c ",186,inicio->carac,186,inicio->frec,186);

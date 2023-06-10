@@ -1,0 +1,1 @@
+Los sistemas distribuidos se definen como un conjunto de terminales o conjunto de dispositivos que permiten ejecutar una sola tarea compleja entre todos los dispositivos o un grupo de tareas por cierto número de nodos

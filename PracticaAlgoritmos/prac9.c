@@ -22,7 +22,7 @@ void imprimirCuadrado(int lado) {
 
 void imprimirOvalo(int altura, int ancho) {
     int i, j;
-    
+
      for (i = 0; i < altura; i++) {
         for (j = 0; j < ancho; j++) {
             if ((i == 0 && (j >= 2 && j <= 7)) || (i == 1 && (j == 1 || j == 8)) || (i == 2 && (j == 0 || j == 9)) ||
@@ -115,7 +115,7 @@ int main() {
     imprimirCuadrado(ladoCuadrado);
     printf("\n");
 
-    printf("Ingrese la altura y el ancho del óvalo: ");
+    printf("Ingrese la altura y el ancho del ovalo: ");
     scanf("%d %d", &alturaOvalo, &anchoOvalo);
     printf("Óvalo:\n");
     imprimirOvalo(alturaOvalo, anchoOvalo);

@@ -55,6 +55,7 @@ int main(){
         printf("\t1. Convertir dia de mes a dia del anio\n");
         printf("\t2. Convertir dia del anio a dia del mes\n");
         printf("\t0. Salir");
+        printf("Opcion: ");
         scanf("%d",&opcion);
         if (opcion == 1){
             printf("Ingrese el mes: ");
